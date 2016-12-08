@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang=<?python
+      print('"en"', end='')
+?>>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+</head>
+<body>
+<?python
+    import time
+
+    import_text = open('text','r').read()
+    print('Imported text:', import_text)
+?>
+This is outside the script brackets <?python
+print('Again inside the script brackets!')
+?></body>
+
+</html>
