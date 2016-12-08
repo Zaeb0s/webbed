@@ -51,4 +51,3 @@ formated_text = webbed('path_to_file', global_variables)
 # Access the global variable "hello" from the file
 print(global_variables['hello'])  # will output 'Hello world!'
 ```
-
