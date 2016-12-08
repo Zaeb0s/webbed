@@ -62,7 +62,7 @@ class Webbed:
         """
         with open(self.path, 'r') as file:
             text = file.read()
-        head, tail = os.path.split(self.path)
+        head, tail = os.path.split(os.path.abspath(self.path))
         primary_dir = os.getcwd()
         os.chdir(head)
         new_text = re.sub(self.regex, self, text)
